@@ -1,0 +1,140 @@
+/* <!-- google fonts --> */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+==============================================
+                  Resets
+==============================================
+*/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  html {
+    interpolate-size: allow-keywords;
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+:root {
+	--white-color: #ffffff;
+	--primary-color: #13547a;
+	--secondary-color: #80d0c7;
+	--section-bg-color: #f0f8ff;
+	--custom-btn-bg-color: #80d0c7;
+	--custom-btn-bg-hover-color: #13547a;
+	--dark-color: #000000;
+	--p-color: #717275;
+	--border-color: #7fffd4;
+	--link-hover-color: #13547a;
+	--body-font-family: 'Open Sans', sans-serif;
+	--title-font-family: 'Montserrat', sans-serif;
+	--h1-font-size: 58px;
+	--h2-font-size: 46px;
+	--h3-font-size: 32px;
+	--h4-font-size: 28px;
+	--h5-font-size: 24px;
+	--h6-font-size: 22px;
+	--p-font-size: 20px;
+	--menu-font-size: 14px;
+	--btn-font-size: 18px;
+	--copyright-font-size: 16px;
+	--border-radius-large: 100px;
+	--border-radius-medium: 20px;
+	--border-radius-small: 10px;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+}
+/* 
+==============================================
+            Navbar Section
+==============================================
+*/
+.nav-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.navbar{
+    background-color: transparent;
+    z-index: 10;
+}
+.navbar a{
+    text-transform: uppercase;
+    color: var(--white-color);
+    display: inline-block;
+	text-decoration: none;
+}
+ul li {
+	font-size: var(--p-font-size);
+	font-weight: var(--font-weight-normal);
+}
+/* 
+==============================================
+              Hero Section
+==============================================
+*/
+
+h1 {
+	font-size: var(--h1-font-size);
+	font-weight: var(--font-weight-bold);
+}
+h6 {
+	color: var(--primary-color);
+	font-size: var(--h6-font-size);
+}
+.hero-section {
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	position: relative;
+	overflow: hidden;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+
+ 
